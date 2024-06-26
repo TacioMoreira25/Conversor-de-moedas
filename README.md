@@ -13,9 +13,11 @@ Como Funciona:
 
 Importação de Bibliotecas: O programa importa as bibliotecas necessárias para funcionar, incluindo customtkinter para a interface gráfica, requests para acessar APIs online e xmltodict para ler arquivos XML.
 Configuração da Interface: A interface gráfica é configurada com o tema "dark-blue" e a janela principal é dimensionada para 500x500 pixels.
+
 Carregamento de Dados:
 Dicionário de Conversões Disponíveis: Um dicionário é carregado a partir de um arquivo XML ("Conversoes.xml") contendo todas as conversões de moedas disponíveis.
 Lista de Nomes de Moedas: Uma lista de nomes de moedas é carregada a partir de outro arquivo XML ("moedas.xml").
+
 Criação de Elementos da Interface:
 Título: Um título "Conversor de Moedas" é criado e exibido na parte superior da tela.
 Textos Explicativos: Textos explicativos são criados para orientar o usuário na seleção das moedas de origem e destino.
@@ -29,6 +31,7 @@ converter_moeda: Obtém as taxas de conversão da API online, realiza a convers�
 pegar_cotacao_moeda: Faz a requisição para a API online para obter a taxa de conversão entre as moedas especificadas.
 nomes_moedas: Lê o arquivo XML "moedas.xml" e retorna um dicionário com os nomes das moedas.
 conversoes_disponiveis: Lê o arquivo XML "Conversoes.xml" e retorna um dicionário com as conversões de moedas disponíveis.
+
 Execução da Interface: A interface gráfica é executada em um loop principal ("mainloop") para que o usuário possa interagir com os elementos e realizar as conversões.
 
 
