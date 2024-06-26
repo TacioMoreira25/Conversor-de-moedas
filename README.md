@@ -1,43 +1,50 @@
-# Conversor de moedas
-Este conversor de moedas é um programa escrito em Python que permite converter valores entre diferentes moedas. Ele utiliza interfaces gráficas e dados de APIs online para fornecer uma experiência amigável e atualizada.
+# Conversor de Moedas 
+### Descrição
+Este conversor de moedas em Python permite converter valores entre diversas moedas com facilidade e precisão. Utilize uma interface gráfica intuitiva para selecionar moedas, digitar valores e visualizar resultados atualizados em tempo real.
 
-Funcionalidades:
+### Funcionalidades
+**Conversão Abrangente:** Converta entre diversas moedas, como Real, Dólar, Euro, Libra Esterlina e muito mais.
+**Interface Intuitiva:** Navegue facilmente com menus drop-down, campos de texto e botões para uma experiência amigável.
+**Atualizações em Tempo Real:** Obtenha taxas de conversão precisas e atualizadas diretamente de APIs online confiáveis.
+**Suporte Multimoeda:** Acesse uma ampla variedade de moedas de diferentes regiões do mundo.
+**Dados Confiáveis:** Confie em fontes confiáveis e atualizadas para taxas de conversão precisas.
+**Personalização:** Personalize a interface com temas e configurações para atender às suas preferências.
 
-Conversão de Moedas: Converta valores entre diversas moedas, como Real, Dólar, Euro, Libra Esterlina e muito mais.
-Interface Gráfica: Utilize um menu intuitivo para selecionar as moedas de origem e destino, digitar o valor a ser convertido e visualizar o resultado.
-Atualizações Automáticas: As taxas de conversão são atualizadas em tempo real através de APIs online, garantindo a precisão dos resultados.
-Múltiplas Moedas Disponíveis: O conversor suporta uma ampla variedade de moedas, abrangendo diversas regiões do mundo.
-Dados Confiáveis: As taxas de conversão são obtidas de fontes confiáveis e atualizadas frequentemente.
-Interface Personalizável: Personalize a aparência da interface com diferentes temas e configurações.
-Como Funciona:
+### Como Funciona
 
-Importação de Bibliotecas: O programa importa as bibliotecas necessárias para funcionar, incluindo customtkinter para a interface gráfica, requests para acessar APIs online e xmltodict para ler arquivos XML.
-Configuração da Interface: A interface gráfica é configurada com o tema "dark-blue" e a janela principal é dimensionada para 500x500 pixels.
+#### Importação de Bibliotecas
 
-Carregamento de Dados:
-Dicionário de Conversões Disponíveis: Um dicionário é carregado a partir de um arquivo XML ("Conversoes.xml") contendo todas as conversões de moedas disponíveis.
-Lista de Nomes de Moedas: Uma lista de nomes de moedas é carregada a partir de outro arquivo XML ("moedas.xml").
+**customtkinter:** Cria a interface gráfica amigável.
+**requests:** Acessa APIs online para obter taxas de conversão.
+**xmltodict:** Interpreta arquivos XML com dados de conversão.
 
-Criação de Elementos da Interface:
+#### Configuração da Interface
 
-Título: Um título "Conversor de Moedas" é criado e exibido na parte superior da tela.
+**Tema:** Define um tema visual atraente ("dark-blue").
+**Dimensão:** Ajusta o tamanho da janela principal para melhor visualização (500x500 pixels).
 
-Textos Explicativos: Textos explicativos são criados para orientar o usuário na seleção das moedas de origem e destino.
-Menus Drop-down: Menus drop-down ("OptionMenu") são criados para que o usuário possa selecionar as moedas de origem e destino.
+#### Carregamento de Dados
 
-Botão de Conversão: Um botão "Converter" é criado para iniciar o processo de conversão.
+**Dicionário de Conversões:** Carrega conversões disponíveis de um arquivo XML ("Conversoes.xml").
+**Lista de Nomes de Moedas:** Obtém nomes de moedas de outro arquivo XML ("moedas.xml").
 
-Campo de Resultado: Um campo de texto é criado para exibir o resultado da conversão.
+#### Criação de Elementos da Interface
 
-Lista de Moedas Disponíveis: Uma lista scrollable é criada para mostrar todas as moedas disponíveis para conversão.
+**Título:** Apresenta o título "Conversor de Moedas" na parte superior.
+**Textos Explicativos:** Orienta o usuário na seleção de moedas.
+**Menus Drop-down:** Permite escolher moedas de origem e destino.
+**Botão de Conversão:** Inicia o processo de conversão.
+**Campo de Resultado:** Exibe o valor convertido.
+**Lista de Moedas Disponíveis:** Mostra todas as moedas para consulta.
 
-Funções:
-carregar_moedas_destino: Carrega as moedas de destino disponíveis para a moeda de origem selecionada no menu drop-down.
-converter_moeda: Obtém as taxas de conversão da API online, realiza a conversão e exibe o resultado no campo de texto.
-pegar_cotacao_moeda: Faz a requisição para a API online para obter a taxa de conversão entre as moedas especificadas.
-nomes_moedas: Lê o arquivo XML "moedas.xml" e retorna um dicionário com os nomes das moedas.
-conversoes_disponiveis: Lê o arquivo XML "Conversoes.xml" e retorna um dicionário com as conversões de moedas disponíveis.
+### Funções
 
-Execução da Interface: A interface gráfica é executada em um loop principal ("mainloop") para que o usuário possa interagir com os elementos e realizar as conversões.
+**carregar_moedas_destino:** Atualiza as moedas de destino com base na moeda de origem selecionada.
+**converter_moeda:** Obtém taxas de conversão, realiza a conversão e exibe o resultado.
+**pegar_cotacao_moeda:** Faz a requisição à API para obter taxas de conversão específicas.
+**nomes_moedas:** Retorna um dicionário com nomes de moedas do arquivo XML.
+**conversoes_disponiveis:** Retorna um dicionário com conversões de moedas do arquivo XML.
 
+### Execução da Interface
 
+**Loop Principal:** Mantém a interface ativa para interação do usuário e realização de conversões.
