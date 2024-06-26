@@ -19,12 +19,18 @@ Dicionário de Conversões Disponíveis: Um dicionário é carregado a partir de
 Lista de Nomes de Moedas: Uma lista de nomes de moedas é carregada a partir de outro arquivo XML ("moedas.xml").
 
 Criação de Elementos da Interface:
+
 Título: Um título "Conversor de Moedas" é criado e exibido na parte superior da tela.
+
 Textos Explicativos: Textos explicativos são criados para orientar o usuário na seleção das moedas de origem e destino.
 Menus Drop-down: Menus drop-down ("OptionMenu") são criados para que o usuário possa selecionar as moedas de origem e destino.
+
 Botão de Conversão: Um botão "Converter" é criado para iniciar o processo de conversão.
+
 Campo de Resultado: Um campo de texto é criado para exibir o resultado da conversão.
+
 Lista de Moedas Disponíveis: Uma lista scrollable é criada para mostrar todas as moedas disponíveis para conversão.
+
 Funções:
 carregar_moedas_destino: Carrega as moedas de destino disponíveis para a moeda de origem selecionada no menu drop-down.
 converter_moeda: Obtém as taxas de conversão da API online, realiza a conversão e exibe o resultado no campo de texto.
